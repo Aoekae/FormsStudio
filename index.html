@@ -3,17 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<script>
-		// TODO: create a handler
+	function setSearchEngine () {
+		// if (input.value === gooogle) {
+		// 	form.
+		// }
+	
+	console.log("test test")
+	}
     window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
+		let form = document.querySelector("searchForm");
+		let actionURL;
+
+		let actions = {
+   "google": "https://www.google.com/"
+};
+
+		form.addEventListener("submit", function(event){
+			setSearchEngine()
+	});
+	});	
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm">
-    <!-- TODO: add form elements -->
+<form id="searchForm">
+<label>Text <input type="text" name="q"/></label>
+<label>Google <input type="radio" name="engine" value="google"/></label>
+<label>DuckDuckGo <input type="radio" name="engine" value="duckDuckGo"/></label>
+<label>Bing <input type="radio" name="engine" value="bing"/></label>
+<label>Ask <input type="radio" name="engine" value="ask"/></label>
+
+<button>Go!</button>
 	</form>
 
 </body>
